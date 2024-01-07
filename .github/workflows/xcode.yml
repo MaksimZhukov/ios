@@ -15,7 +15,7 @@ on:
 jobs:
   build-and-test:
     name: Build and Test
-    runs-on: macos-latest
+    runs-on: macos-13
     if: github.event.pull_request.draft == false
     env:
       PROJECT: Nextcloud.xcodeproj
