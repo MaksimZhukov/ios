@@ -99,7 +99,7 @@ struct LockscreenWidget: Widget {
 
 extension View {
     func widgetBackground(_ backgroundView: some View) -> some View {
-        if #available(iOSApplicationExtension 17.0, *) {
+        if #available(iOSApplicationExtension 16.0, *) {
             return containerBackground(for: .widget) {
                 backgroundView
             }
